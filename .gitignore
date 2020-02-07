@@ -1,6 +1,6 @@
 /example.http
 /webpack.config.js
-/frontend
+frontend
 
 npm-debug.log*
 yarn-debug.log*
