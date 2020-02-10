@@ -12,9 +12,9 @@ router.get("/", (req, res) => {
 
 // Post Create
 router.post("/", (req, res) => {
-  const { title, body } = req.body;
-  console.log(title, body);
-  Post.create({ title, body })
+  const { title, body, rawBody } = req.body;
+  console.log(title, body, rawBody);
+  Post.create({ title, body, rawBody })
     .then(post => res.status(200).send(`Created post ${post.id}`))
     .catch(err => {
       console.log(err);
